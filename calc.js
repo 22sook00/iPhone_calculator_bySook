@@ -1,7 +1,5 @@
-//클릭한 클래스 넘버의 입력값을 콘솔에 나타내보자.
-//쿼리셀렉터는 불가함 ?
 // for 문 이용해서 모든 number 를 선택한다.
-// 그 선택된 number들 각각 onclick 이벤트를 추가한다.
+// 선택된 number들 각각 onclick 이벤트를 추가한다.
 // onclick 이벤트를 작동하면 number 의 value 값을 콘솔에 나타내본다.
 
 const btnClass = document.querySelectorAll('.number,.decimal,.operator,.clear,.calculate,.ttl') //노드리스트 반환.
@@ -101,7 +99,6 @@ for(let i = 0; i <btnClass.length;i++){
 
     //enter (결과값)
     if(eTarget.classList[0] == 'ttl' ){
-      //display.textContent = calculateResult(firstNum,operatorBtn,secondNum);
       if(firstNum){
         if(storeClass === 'ttl'){
           display.textContent = calculateResult(display.textContent,operatorBtn,secondNum);
@@ -114,3 +111,4 @@ for(let i = 0; i <btnClass.length;i++){
     }
   }) 
 }
+
